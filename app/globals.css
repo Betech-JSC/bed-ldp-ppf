@@ -9,39 +9,39 @@
 /* --- 2. CSS VARIABLES & DESIGN TOKENS --- */
 :root {
   /* Colors */
-  --bg-deep: #08090b;
-  --bg-darker: #0d0e11;
-  --bg-card: #14171c;
-  --bg-card-hover: #1b1e24;
-  --text-white: #ffffff;
-  --text-gray-100: #e2e8f0;
-  --text-gray-300: #94a3b8;
-  --text-gray-500: #64748b;
+  --bg-deep: #ffffff;
+  --bg-darker: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --text-white: #0f172a;
+  --text-gray-100: #334155;
+  --text-gray-300: #475569;
+  --text-gray-500: #94a3b8;
   
   /* Brand Accents */
-  --accent-cyan: #00F2FE;
-  --accent-cyan-rgb: 0, 242, 254;
-  --accent-blue: #0072FF;
-  --accent-blue-rgb: 0, 114, 255;
-  --accent-gold: #FFAB00;
-  --accent-gold-rgb: 255, 171, 0;
+  --accent-cyan: #00B4D8;
+  --accent-cyan-rgb: 0, 180, 216;
+  --accent-blue: #0077B6;
+  --accent-blue-rgb: 0, 119, 182;
+  --accent-gold: #D97706;
+  --accent-gold-rgb: 217, 119, 6;
   
   /* Gradients */
   --grad-primary: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-blue) 100%);
   --grad-dark: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-darker) 100%);
-  --grad-card: linear-gradient(145deg, rgba(20, 23, 28, 0.9) 0%, rgba(13, 14, 17, 0.9) 100%);
-  --grad-cyan-glow: radial-gradient(circle, rgba(var(--accent-cyan-rgb), 0.15) 0%, transparent 70%);
+  --grad-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  --grad-cyan-glow: radial-gradient(circle, rgba(var(--accent-cyan-rgb), 0.08) 0%, transparent 70%);
   
   /* Borders */
-  --border-light: rgba(255, 255, 255, 0.05);
+  --border-light: rgba(0, 0, 0, 0.08);
   --border-cyan-dim: rgba(var(--accent-cyan-rgb), 0.15);
   --border-cyan-bright: rgba(var(--accent-cyan-rgb), 0.4);
   
   /* Shadows & Glows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
-  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.7);
-  --shadow-glow: 0 0 20px rgba(var(--accent-cyan-rgb), 0.3);
-  --shadow-glow-gold: 0 0 20px rgba(var(--accent-gold-rgb), 0.3);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --shadow-glow: 0 0 20px rgba(var(--accent-cyan-rgb), 0.15);
+  --shadow-glow-gold: 0 0 20px rgba(var(--accent-gold-rgb), 0.15);
   
   /* Fonts */
   --font-title: 'Outfit', sans-serif;
@@ -291,7 +291,7 @@ button, input, textarea, select {
 
 .btn-primary {
   background: var(--grad-primary);
-  color: var(--bg-deep);
+  color: #ffffff;
   box-shadow: var(--shadow-glow);
 }
 
@@ -301,13 +301,13 @@ button, input, textarea, select {
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(0, 0, 0, 0.03);
   border: 1px solid var(--border-light);
   color: var(--text-white);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.06);
   border-color: var(--text-white);
   transform: translateY(-2px);
 }
@@ -320,14 +320,14 @@ button, input, textarea, select {
 
 .btn-accent:hover {
   background: var(--accent-cyan);
-  color: var(--bg-deep);
+  color: #ffffff;
   box-shadow: var(--shadow-glow);
   transform: translateY(-2px);
 }
 
 .btn-gold {
   background: linear-gradient(135deg, var(--accent-gold) 0%, #E69500 100%);
-  color: var(--bg-deep);
+  color: #ffffff;
   box-shadow: var(--shadow-glow-gold);
 }
 
@@ -395,7 +395,7 @@ button, input, textarea, select {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(8, 9, 11, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-light);
@@ -405,7 +405,7 @@ button, input, textarea, select {
 
 .header.scrolled {
   padding: 0.7rem 0;
-  background: rgba(8, 9, 11, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   box-shadow: var(--shadow-sm);
 }
 

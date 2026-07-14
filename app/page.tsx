@@ -191,36 +191,12 @@ export default function Home() {
           
           <div className="hero-image-wrapper reveal">
             <div className="hero-glow"></div>
-            <svg className="hero-svg-car" viewBox="0 0 600 350" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bản vẽ quét laser xe hơi dán PPF bảo vệ sơn">
-              <defs>
-                <linearGradient id="carGrad" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stopColor="#00F2FE" stopOpacity="0.8"/>
-                  <stop offset="100%" stopColor="#0072FF" stopOpacity="0.2"/>
-                </linearGradient>
-                <linearGradient id="glowGrad" x1="0.5" y1="0" x2="0.5" y2="1">
-                  <stop offset="0%" stopColor="#00F2FE" stopOpacity="0.3"/>
-                  <stop offset="100%" stopColor="#00F2FE" stopOpacity="0"/>
-                </linearGradient>
-              </defs>
-              <ellipse cx="300" cy="300" rx="220" ry="30" fill="url(#glowGrad)"/>
-              <path d="M80 260 L140 240 Q170 230 180 200 L210 120 Q225 90 280 90 L380 95 Q420 100 440 130 L490 200 Q510 220 540 230 L560 250 Q580 265 570 280 L540 290 L490 290 Q475 260 440 260 Q405 260 390 290 L210 290 Q195 260 160 260 Q125 260 110 290 L60 290 Q50 280 80 260 Z" fill="#14171c" stroke="url(#carGrad)" strokeWidth="2.5"/>
-              <path d="M220 120 L275 97 L370 102 L410 135 L435 180 L205 180 Z" fill="rgba(0, 242, 254, 0.05)" stroke="url(#carGrad)" strokeWidth="1.5"/>
-              <path d="M300 97 L300 180" stroke="url(#carGrad)" strokeWidth="1.5"/>
-              
-              <circle cx="160" cy="275" r="35" fill="#08090b" stroke="url(#carGrad)" strokeWidth="3"/>
-              <circle cx="160" cy="275" r="25" fill="none" stroke="url(#carGrad)" strokeWidth="1" strokeDasharray="4 4"/>
-              <circle cx="160" cy="275" r="8" fill="url(#carGrad)"/>
-              
-              <circle cx="440" cy="275" r="35" fill="#08090b" stroke="url(#carGrad)" strokeWidth="3"/>
-              <circle cx="440" cy="275" r="25" fill="none" stroke="url(#carGrad)" strokeWidth="1" strokeDasharray="4 4"/>
-              <circle cx="440" cy="275" r="8" fill="url(#carGrad)"/>
-
-              <path d="M80 180 L520 180" stroke="#00F2FE" strokeWidth="2" opacity="0.6" strokeDasharray="5 5"/>
-              <path d="M120 150 L480 150" stroke="#00F2FE" strokeWidth="1.5" opacity="0.4"/>
-              <path d="M150 120 L450 120" stroke="#00F2FE" strokeWidth="1" opacity="0.2"/>
-              
-              <polygon points="120,50 480,50 300,180" fill="url(#glowGrad)" opacity="0.4"/>
-            </svg>
+            <img 
+              src="/images/ford-ppf.png" 
+              alt="Xe Ford Ranger Raptor dán phim bảo vệ sơn PPF cao cấp" 
+              className="hero-svg-car"
+              style={{ borderRadius: '16px', border: '1px solid var(--border-light)', boxShadow: 'var(--shadow-md)', width: '100%', height: 'auto', display: 'block', position: 'relative', zIndex: 1 }}
+            />
           </div>
         </div>
       </section>
@@ -518,17 +494,16 @@ export default function Home() {
             </div>
 
             <div className="gallery-card glass-card reveal">
-              <div className="gallery-img-mock">
-                <svg viewBox="0 0 350 250" className="svg-visual" role="img" aria-label="Hình ảnh xe Mercedes E300 dán PPF bảo vệ sơn và đèn trước">
-                  <rect width="100%" height="100%" fill="#16191E"/>
-                  <path d="M 50 180 Q 175 120 300 180" stroke="#0072FF" strokeWidth="4" fill="none"/>
-                  <text x="30" y="50" fill="#FFF" fontFamily="Outfit" fontWeight="bold">Mercedes-Benz E300</text>
-                  <text x="30" y="80" fill="#999" fontSize="12">Gói bảo vệ mặt trước + Cột piano</text>
-                </svg>
+              <div className="gallery-img-mock" style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                <img 
+                  src="/images/ford-ppf.png" 
+                  alt="Ford Ranger Raptor dán PPF TPU cao cấp"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
               </div>
               <div className="gallery-info">
-                <h4>Mercedes-Benz E300 AMG</h4>
-                <p>Dán trọn cản trước, đèn pha và toàn bộ chi tiết nhựa bóng đen Piano cột B/C.</p>
+                <h4>Ford Ranger Raptor</h4>
+                <p>Thi công phủ kín PPF TPU ngoại thất siêu chịu lực chống trầy xước và đá dăm.</p>
               </div>
             </div>
 
