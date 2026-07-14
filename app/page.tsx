@@ -611,15 +611,18 @@ export default function Home() {
           className="float-btn float-zalo"
           aria-label="Chat qua Zalo"
         >
-          <span>Zalo</span>
+          <svg viewBox="0 0 24 24" style={{ width: '28px', height: '28px' }}>
+            <path fill="#ffffff" d="M12 3c-5.5 0-10 3.8-10 8.5 0 2.7 1.5 5.1 3.9 6.7l-1 3c-.1.3.1.6.4.5l3.5-1.5c1 .5 2.1.8 3.2.8 5.5 0 10-3.8 10-8.5S17.5 3 12 3z" />
+            <path fill="#0068FF" d="M14.2 15h-4.6v-1.1l2.8-3.4H10V9.4h4.2v1.1l-2.8 3.4h2.8V15z" />
+          </svg>
         </a>
         <a 
           href="tel:0961090628" 
           className="float-btn float-phone"
           aria-label="Gọi hotline"
         >
-          <svg className="float-icon" viewBox="0 0 24 24">
-            <path d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.27c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.26 1.12l-2.2 2.2z" />
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: '22px', height: '22px' }}>
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
           </svg>
         </a>
       </div>
