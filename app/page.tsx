@@ -601,6 +601,28 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* FLOATING ACTION WIDGET */}
+      <div className="floating-widget">
+        <a 
+          href="https://zalo.me/0961090628" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="float-btn float-zalo"
+          aria-label="Chat qua Zalo"
+        >
+          <span>Zalo</span>
+        </a>
+        <a 
+          href="tel:0961090628" 
+          className="float-btn float-phone"
+          aria-label="Gọi hotline"
+        >
+          <svg className="float-icon" viewBox="0 0 24 24">
+            <path d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.27c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.26 1.12l-2.2 2.2z" />
+          </svg>
+        </a>
+      </div>
     </>
   );
 }
