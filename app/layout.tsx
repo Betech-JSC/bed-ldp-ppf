@@ -3,7 +3,7 @@ import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
-  subsets: ["latin", "vietnamese"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-title",
   weight: ["400", "500", "600", "700", "800", "900"],
 });
