@@ -9,6 +9,7 @@ export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [navActive, setNavActive] = useState(false);
   const [activeSection, setActiveSection] = useState("trang-chu");
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +17,12 @@ export default function Home() {
         setScrolled(true);
       } else {
         setScrolled(false);
+      }
+
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (totalHeight > 0) {
+        const progress = (window.scrollY / totalHeight) * 100;
+        setScrollProgress(progress);
       }
 
       const sections = ["trang-chu", "showcase", "bang-gia", "quy-trinh", "thu-vien", "lien-he"];
@@ -78,6 +85,7 @@ export default function Home() {
 
   return (
     <>
+      <div className="scroll-progress" style={{ width: `${scrollProgress}%` }}></div>
       {/* HEADER / NAVIGATION */}
       <header className={`header ${scrolled ? "scrolled" : ""}`}>
         <div className="container header-container">
