@@ -82,18 +82,8 @@ export default function Home() {
       <header className={`header ${scrolled ? "scrolled" : ""}`}>
         <div className="container header-container">
           <a href="#" className="logo">
-            <span className="logo-accent">PPF</span> ĐỒNG NAI
+            <img src="/images/logo.png" alt="PPF Đồng Nai Logo" className="logo-img" />
           </a>
-          
-          <button 
-            className={`nav-toggle ${navActive ? "active" : ""}`} 
-            onClick={() => setNavActive(!navActive)}
-            aria-label="Mở menu"
-          >
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
-          </button>
 
           <nav className={`nav-menu ${navActive ? "active" : ""}`}>
             <a 
@@ -138,13 +128,32 @@ export default function Home() {
             >
               Liên Hệ
             </a>
-            <a href="tel:0933156388" className="btn btn-accent btn-nav-phone">
+            <a href="tel:0961090628" className="btn btn-accent btn-nav-phone mobile-only-phone">
               <svg className="btn-icon" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.27c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.26 1.12l-2.2 2.2z"/>
               </svg>
-              0933.156.388
+              096 109 06 28
             </a>
           </nav>
+
+          <div className="header-action">
+            <a href="tel:0961090628" className="btn btn-accent desktop-only-phone">
+              <svg className="btn-icon" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.27c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.26 1.12l-2.2 2.2z"/>
+              </svg>
+              096 109 06 28
+            </a>
+          </div>
+          
+          <button 
+            className={`nav-toggle ${navActive ? "active" : ""}`} 
+            onClick={() => setNavActive(!navActive)}
+            aria-label="Mở menu"
+          >
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </button>
         </div>
       </header>
 
@@ -300,7 +309,6 @@ export default function Home() {
           <div className="grid grid-2 package-grids">
             <div className="package-group-card glass-card reveal">
               <div className="package-header">
-                <span className="group-icon">🏍️</span>
                 <h3>Dành Cho Xe Máy</h3>
                 <p>Bảo vệ toàn diện cho các dòng xe SH, Vespa, Exciter, PKL...</p>
               </div>
@@ -341,7 +349,6 @@ export default function Home() {
 
             <div className="package-group-card glass-card reveal">
               <div className="package-header">
-                <span className="group-icon">🚗</span>
                 <h3>Dành Cho Ô Tô</h3>
                 <p>Các gói dán bảo vệ các chi tiết ngoại thất, nội thất ô tô.</p>
               </div>
@@ -441,24 +448,16 @@ export default function Home() {
             
             <div className="process-image-panel reveal">
               <div className="glow-box"></div>
-              <svg className="process-svg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mô phỏng thi công gạt nước và ôm góc dán PPF">
-                <rect width="100%" height="100%" rx="20" fill="#14171c" stroke="var(--border-light)"/>
-                <path d="M100 250 C 150 180, 350 180, 400 250" stroke="#0072FF" strokeWidth="12" strokeLinecap="round"/>
-                <path d="M100 250 C 150 180, 350 180, 400 250" stroke="#00F2FE" strokeWidth="4" strokeLinecap="round"/>
-                
-                <path d="M 220 150 L 320 190 L 300 220 L 200 180 Z" fill="rgba(0, 242, 254, 0.2)" stroke="#00F2FE" strokeWidth="2"/>
-                <path d="M 200 180 L 220 150" stroke="#00F2FE" strokeWidth="4"/>
-                
-                <circle cx="180" cy="200" r="3" fill="#00F2FE"/>
-                <circle cx="210" cy="220" r="2" fill="#00F2FE"/>
-                <circle cx="280" cy="210" r="4" fill="#00F2FE"/>
-                <circle cx="340" cy="230" r="3" fill="#00F2FE"/>
-                
-                <polygon points="120,80 140,70 160,80 160,100 140,110 120,100" stroke="rgba(255, 255, 255, 0.1)" strokeWidth="1" fill="none"/>
-                <polygon points="360,380 380,370 400,380 400,400 380,410 360,400" stroke="rgba(0, 242, 254, 0.1)" strokeWidth="1" fill="none"/>
-                
-                <text x="50" y="440" fill="#999" fontFamily="Outfit" fontSize="16">THI CÔNG PHÒNG SẠCH KHÔNG BỤI 100%</text>
-              </svg>
+              <div className="process-img-wrapper">
+                <img 
+                  src="/images/process-teckwrap.png" 
+                  alt="Thi công dán PPF TeckWrap trong phòng sạch chuẩn" 
+                  className="process-img"
+                />
+                <div className="process-img-caption">
+                  THI CÔNG PHÒNG SẠCH KHÔNG BỤI 100%
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -480,45 +479,40 @@ export default function Home() {
           <div className="grid grid-3 gallery-grid">
             <div className="gallery-card glass-card reveal">
               <div className="gallery-img-mock">
-                <svg viewBox="0 0 350 250" className="svg-visual" role="img" aria-label="Hình ảnh xe Honda SH 350i dán PPF TPU bóng bảo vệ sơn xe">
-                  <rect width="100%" height="100%" fill="#16191E"/>
-                  <path d="M 50 180 Q 175 140 300 180" stroke="#00F2FE" strokeWidth="4" fill="none"/>
-                  <text x="30" y="50" fill="#FFF" fontFamily="Outfit" fontWeight="bold">Honda SH 350i</text>
-                  <text x="30" y="80" fill="#999" fontSize="12">Gói dán Full xe Premium TPU</text>
-                </svg>
-              </div>
-              <div className="gallery-info">
-                <h4>Honda SH 350i</h4>
-                <p>Dán PPF TPU bóng bảo vệ toàn diện nước sơn xi măng nguyên bản.</p>
-              </div>
-            </div>
-
-            <div className="gallery-card glass-card reveal">
-              <div className="gallery-img-mock" style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
                 <img 
-                  src="/images/ford-ppf.png" 
-                  alt="Ford Ranger Raptor dán PPF TPU cao cấp"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  src="/images/gallery-1.jpg" 
+                  alt="Ford Everest Platinum dán PPF" 
                 />
               </div>
               <div className="gallery-info">
-                <h4>Ford Ranger Raptor</h4>
-                <p>Thi công phủ kín PPF TPU ngoại thất siêu chịu lực chống trầy xước và đá dăm.</p>
+                <h4>Ford Everest Platinum</h4>
+                <p>Dán phim PPF TPU bóng bảo vệ sơn xe, giữ trọn màu sơn xanh rêu đặc biệt nguyên bản.</p>
               </div>
             </div>
 
             <div className="gallery-card glass-card reveal">
               <div className="gallery-img-mock">
-                <svg viewBox="0 0 350 250" className="svg-visual" role="img" aria-label="Hình ảnh xe Vespa GTS dán PPF bảo vệ sơn bóng">
-                  <rect width="100%" height="100%" fill="#16191E"/>
-                  <path d="M 50 160 Q 175 160 300 160" stroke="#FFAB00" strokeWidth="4" fill="none"/>
-                  <text x="30" y="50" fill="#FFF" fontFamily="Outfit" fontWeight="bold">Vespa GTS Super Sport</text>
-                  <text x="30" y="80" fill="#999" fontSize="12">Gói dán PPF chống xước cao cấp</text>
-                </svg>
+                <img 
+                  src="/images/gallery-2.png" 
+                  alt="Hyundai Grand i10 dán PPF"
+                />
               </div>
               <div className="gallery-info">
-                <h4>Vespa GTS Super Sport</h4>
-                <p>Bọc màng bảo vệ ôm sát toàn bộ các đường cong góc cạnh phức tạp của xe.</p>
+                <h4>Hyundai Grand i10</h4>
+                <p>Dán PPF chống xước cản trước, đèn pha và các chi tiết nội - ngoại thất nhựa bóng.</p>
+              </div>
+            </div>
+
+            <div className="gallery-card glass-card reveal">
+              <div className="gallery-img-mock">
+                <img 
+                  src="/images/gallery-3.jpg" 
+                  alt="Ford Everest dán PPF"
+                />
+              </div>
+              <div className="gallery-info">
+                <h4>Ford Everest</h4>
+                <p>Hiệu chỉnh bề mặt sơn chuyên sâu kết hợp phủ màng bảo vệ PPF TPU cao cấp.</p>
               </div>
             </div>
           </div>
@@ -541,21 +535,35 @@ export default function Home() {
                   <span className="meta-icon">📍</span>
                   <div>
                     <strong>Địa chỉ Showroom:</strong>
-                    <p>Xa lộ Hà Nội, Khu Phố 33, Phường Tam Hiệp, TP. Biên Hòa, Đồng Nai (Gần ngã tư Tam Hiệp)</p>
+                    <p>10A/7 Xa Lộ Hà Nội, Khu Phố 33, Phường Tam Hiệp, Biên Hòa, Vietnam</p>
                   </div>
                 </div>
                 <div className="meta-item">
                   <span className="meta-icon">📞</span>
                   <div>
                     <strong>Hotline tư vấn 24/7:</strong>
-                    <p><a href="tel:0933156388">0933.156.388</a></p>
+                    <p><a href="tel:0961090628">096 109 06 28</a></p>
+                  </div>
+                </div>
+                <div className="meta-item">
+                  <span className="meta-icon">✉️</span>
+                  <div>
+                    <strong>Email liên hệ:</strong>
+                    <p><a href="mailto:ppfdongnai@gmail.com">ppfdongnai@gmail.com</a></p>
                   </div>
                 </div>
                 <div className="meta-item">
                   <span className="meta-icon">💬</span>
                   <div>
-                    <strong>Hỗ trợ Zalo:</strong>
-                    <p><a href="https://zalo.me/0933156388" target="_blank" rel="noopener">Zalo: PPF Đồng Nai</a></p>
+                    <strong>Facebook Messenger:</strong>
+                    <p><a href="https://m.me/ppfdongnai" target="_blank" rel="noopener">PPF Đồng Nai</a></p>
+                  </div>
+                </div>
+                <div className="meta-item">
+                  <span className="meta-icon">🔗</span>
+                  <div>
+                    <strong>Liên kết hệ thống:</strong>
+                    <p><a href="https://scarcityvietnam.com.vn" target="_blank" rel="noopener">scarcityvietnam.com.vn</a></p>
                   </div>
                 </div>
               </div>
@@ -573,7 +581,9 @@ export default function Home() {
       <footer className="footer">
         <div className="container footer-container">
           <div className="footer-brand">
-            <a href="#" className="logo"><span className="logo-accent">PPF</span> ĐỒNG NAI</a>
+            <a href="#" className="logo">
+              <img src="/images/logo.png" alt="PPF Đồng Nai Logo" className="logo-img" />
+            </a>
             <p>Trung tâm nâng cấp và thi công phim dán bảo vệ bề mặt sơn chuyên nghiệp số 1 tại Biên Hòa, Đồng Nai.</p>
           </div>
           <div className="footer-links">

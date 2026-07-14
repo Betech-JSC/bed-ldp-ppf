@@ -63,31 +63,28 @@ export default function BeforeAfterSlider() {
         onClick={handleContainerClick}
       >
         {/* Before Image */}
-        <div className="slider-image before-image">
-          <svg viewBox="0 0 800 450" className="svg-visual">
-            <rect width="100%" height="100%" fill="#1E2024"/>
-            <path d="M 100 100 Q 200 150 300 80" stroke="#444" strokeWidth="3" strokeLinecap="round"/>
-            <path d="M 400 300 Q 450 250 600 320" stroke="#444" strokeWidth="2" strokeLinecap="round"/>
-            <path d="M 200 320 L 250 350" stroke="#555" strokeWidth="2"/>
-            <path d="M 150 280 Q 180 290 220 270" stroke="#555" strokeWidth="1"/>
-            <path d="M 500 120 L 530 140" stroke="#444" strokeWidth="3"/>
-            <path d="M 100 380 C 200 340, 600 340, 700 380" fill="none" stroke="#222" strokeWidth="20"/>
-            <text x="50" y="80" fill="#999" fontFamily="Outfit" fontSize="28" fontWeight="bold" opacity="0.6">SƠN XE KHÔNG DÁN PPF: DỄ XƯỚC & Ố MÀU</text>
-          </svg>
+        <div className="slider-image">
+          <img 
+            src="/images/before-slider.png" 
+            alt="Sơn xe khi chưa dán PPF: Nhiều vết xước xoáy và trầy dăm" 
+          />
+          <div className="slider-label before-label">
+            Chưa dán PPF: Xước & Ố màu
+          </div>
         </div>
         {/* After Image */}
         <div 
           className="slider-image after-image"
           style={{ width: `${percentage}%` }}
         >
-          <svg viewBox="0 0 800 450" className="svg-visual" style={{ width: "800px", height: "450px", maxWidth: "none" }}>
-            <rect width="100%" height="100%" fill="#0a0c10"/>
-            <path d="M 100 380 C 200 340, 600 340, 700 380" fill="none" stroke="#00F2FE" strokeWidth="20" opacity="0.3"/>
-            <path d="M 250 150 L 255 165 L 270 170 L 255 175 L 250 190 L 245 175 L 230 170 L 245 165 Z" fill="#00F2FE"/>
-            <path d="M 550 250 L 553 260 L 563 263 L 553 266 L 550 276 L 547 266 L 537 263 L 547 260 Z" fill="#FFAB00"/>
-            <path d="M 100 220 C 300 200, 500 240, 700 220" fill="none" stroke="rgba(0, 242, 254, 0.4)" strokeWidth="8" strokeLinecap="round"/>
-            <text x="50" y="80" fill="#00F2FE" fontFamily="Outfit" fontSize="28" fontWeight="bold">SAU KHI DÁN PPF TPU: SIÊU BÓNG & TỰ PHỤC HỒI</text>
-          </svg>
+          <img 
+            src="/images/after-slider.png" 
+            alt="Sơn xe sau khi dán PPF TPU: Siêu bóng và tự phục hồi" 
+            style={{ width: "800px", height: "450px", maxWidth: "none" }}
+          />
+          <div className="slider-label after-label" style={{ width: "max-content" }}>
+            Đã dán PPF: Siêu bóng & Tự phục hồi
+          </div>
         </div>
         {/* Slider Bar */}
         <div 
