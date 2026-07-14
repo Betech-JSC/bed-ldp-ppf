@@ -33,7 +33,7 @@ export default function RootLayout({
     "telephone": "+84961090628",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "10A/7 Xa Lộ Hà Nội, Khu Phố 33, Phường Tam Hiệp",
+      "streetAddress": "10A/7 Xa Lộ Hà Nội, Khu Phố 5, Phường Tam Hiệp",
       "addressLocality": "Biên Hòa",
       "addressRegion": "Đồng Nai",
       "addressCountry": "VN"

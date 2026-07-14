@@ -535,7 +535,7 @@ export default function Home() {
                   <span className="meta-icon">📍</span>
                   <div>
                     <strong>Địa chỉ Showroom:</strong>
-                    <p>10A/7 Xa Lộ Hà Nội, Khu Phố 33, Phường Tam Hiệp, Biên Hòa, Vietnam</p>
+                    <p>10A/7 Xa Lộ Hà Nội, Khu Phố 5, Phường Tam Hiệp, Biên Hòa, Đồng Nai</p>
                   </div>
                 </div>
                 <div className="meta-item">
@@ -597,7 +597,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2026 PPF Đồng Nai. Bảo vệ hoàn hảo giá trị xế yêu. Thiết kế bởi Antigravity.</p>
+            <p>&copy; 2026 PPF Đồng Nai. Bảo vệ hoàn hảo giá trị xế yêu.</p>
           </div>
         </div>
       </footer>
