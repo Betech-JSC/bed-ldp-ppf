@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 
 export default function BeforeAfterSlider() {
   const [percentage, setPercentage] = useState(50);
+  const [containerWidth, setContainerWidth] = useState(800);
   const containerRef = useRef<HTMLDivElement>(null);
   const isDraggingRef = useRef(false);
 
@@ -32,12 +33,23 @@ export default function BeforeAfterSlider() {
   };
 
   useEffect(() => {
+    if (!containerRef.current) return;
+    const updateWidth = () => {
+      if (containerRef.current) {
+        setContainerWidth(containerRef.current.getBoundingClientRect().width);
+      }
+    };
+    
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+    
     window.addEventListener("mouseup", handleMouseUp);
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("touchend", handleMouseUp);
     window.addEventListener("touchmove", handleTouchMove);
 
     return () => {
+      window.removeEventListener("resize", updateWidth);
       window.removeEventListener("mouseup", handleMouseUp);
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("touchend", handleMouseUp);
@@ -80,7 +92,7 @@ export default function BeforeAfterSlider() {
           <img 
             src="/images/after-slider.png" 
             alt="Sơn xe sau khi dán PPF TPU: Siêu bóng và tự phục hồi" 
-            style={{ width: "800px", height: "450px", maxWidth: "none" }}
+            style={{ width: `${containerWidth}px`, height: "100%", objectFit: "cover", maxWidth: "none" }}
           />
           <div className="slider-label after-label" style={{ width: "max-content" }}>
             Đã dán PPF: Siêu bóng & Tự phục hồi
