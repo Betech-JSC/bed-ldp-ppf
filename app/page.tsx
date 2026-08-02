@@ -136,20 +136,20 @@ export default function Home() {
             >
               Liên Hệ
             </a>
-            <a href="tel:0961090628" className="btn btn-accent btn-nav-phone mobile-only-phone">
+            <a href="tel:0818398868" className="btn btn-accent btn-nav-phone mobile-only-phone">
               <svg className="btn-icon" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.27c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.26 1.12l-2.2 2.2z"/>
               </svg>
-              096 109 06 28
+              0818 398 868
             </a>
           </nav>
 
           <div className="header-action">
-            <a href="tel:0961090628" className="btn btn-accent desktop-only-phone">
+            <a href="tel:0818398868" className="btn btn-accent desktop-only-phone">
               <svg className="btn-icon" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.27c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.26 1.12l-2.2 2.2z"/>
               </svg>
-              096 109 06 28
+              0818 398 868
             </a>
           </div>
           
@@ -212,7 +212,7 @@ export default function Home() {
               src="/images/ford-ppf.png" 
               alt="Xe Ford Ranger Raptor dán phim bảo vệ sơn PPF cao cấp" 
               className="hero-svg-car"
-              style={{ borderRadius: '16px', border: '1px solid var(--border-light)', boxShadow: 'var(--shadow-md)', width: '100%', height: 'auto', display: 'block', position: 'relative', zIndex: 1 }}
+              style={{ borderRadius: '20px', border: '1px solid var(--border-light)', boxShadow: 'var(--shadow-lg)', width: '100%', height: 'auto', display: 'block', position: 'relative', zIndex: 1 }}
             />
           </div>
         </div>
@@ -550,7 +550,7 @@ export default function Home() {
                   <span className="meta-icon">📞</span>
                   <div>
                     <strong>Hotline tư vấn 24/7:</strong>
-                    <p><a href="tel:0961090628">096 109 06 28</a></p>
+                    <p><a href="tel:0818398868">0818 398 868</a></p>
                   </div>
                 </div>
                 <div className="meta-item">
@@ -613,7 +613,7 @@ export default function Home() {
       {/* FLOATING ACTION WIDGET */}
       <div className="floating-widget">
         <a 
-          href="https://zalo.me/0961090628" 
+          href="https://zalo.me/0818398868" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="float-btn float-zalo"
@@ -625,7 +625,7 @@ export default function Home() {
           </svg>
         </a>
         <a 
-          href="tel:0961090628" 
+          href="tel:0818398868" 
           className="float-btn float-phone"
           aria-label="Gọi hotline"
         >

@@ -30,7 +30,7 @@ export default function RootLayout({
     "name": "PPF Đồng Nai",
     "description": "PPF Đồng Nai chuyên dán phim bảo vệ sơn xe hơi, xe máy cao cấp chất liệu TPU nhập khẩu tại Biên Hòa.",
     "url": "https://facebook.com/ppfdongnai",
-    "telephone": "+84961090628",
+    "telephone": "+84818398868",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "10A/7 Xa Lộ Hà Nội, Khu Phố 5, Phường Tam Hiệp",
