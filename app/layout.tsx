@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Outfit, Inter } from "next/font/google";
+import { Be_Vietnam_Pro, Inter } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
-  subsets: ["latin", "latin-ext"],
+const beVietnamPro = Be_Vietnam_Pro({
+  subsets: ["latin", "vietnamese"],
   variable: "--font-title",
   weight: ["400", "500", "600", "700", "800", "900"],
 });
@@ -145,7 +145,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="vi" className={`${outfit.variable} ${inter.variable}`}>
+    <html lang="vi" className={`${beVietnamPro.variable} ${inter.variable}`}>
       <head>
         <script
           type="application/ld+json"

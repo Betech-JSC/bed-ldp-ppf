@@ -174,8 +174,8 @@ export default function Home() {
               ★ CÔNG NGHỆ BẢO VỆ SƠN TIÊN TIẾN NHẤT
             </div>
             <h1 className="hero-title">
-              DÁN PHIM PPF TPU ĐỒNG NAI <br />
-              <span className="text-gradient">BẢO VỆ SƠN XE CAO CẤP</span>
+              BẢO VỆ VÔ HÌNH <br />
+              <span className="text-gradient">ĐẲNG CẤP HỮU HÌNH</span>
             </h1>
             <p className="hero-desc">
               Lớp khiên pha lê TPU tự phục hồi vết xước. Bảo vệ xế yêu tuyệt đối trước đá dăm, tác nhân môi trường và giữ trọn lớp sơn nguyên bản lâu dài.
