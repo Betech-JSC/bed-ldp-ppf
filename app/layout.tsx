@@ -102,7 +102,7 @@ export default function RootLayout({
     },
     "sameAs": [
       "https://facebook.com/ppfdongnai",
-      "https://scarcityvietnam.com.vn"
+      "https://danphimxehoi.com"
     ]
   };
 
