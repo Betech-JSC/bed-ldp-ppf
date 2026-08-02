@@ -851,14 +851,25 @@ button, input, textarea, select {
   color: #FFFFFF;
 }
 
-.benefit-grid {
-  margin-top: var(--space-lg);
+.benefit-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--bg-darker);
+  border: 1px solid var(--border-light);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+  margin-bottom: var(--space-sm);
+  transition: transform var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
 }
 
-.benefit-icon {
-  font-size: 2.2rem;
-  margin-bottom: var(--space-sm);
-  display: inline-block;
+.glass-card:hover .benefit-icon {
+  transform: scale(1.1) rotate(2deg);
+  background: var(--accent-cyan);
+  color: #FFFFFF;
+  border-color: var(--accent-cyan);
 }
 
 .benefit-title {
@@ -1223,8 +1234,24 @@ button, input, textarea, select {
 }
 
 .meta-icon {
-  font-size: 1.4rem;
-  line-height: 1;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--bg-darker);
+  border: 1px solid var(--border-light);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+  flex-shrink: 0;
+  transition: transform var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.meta-item:hover .meta-icon {
+  transform: translateY(-2px);
+  background: var(--accent-cyan);
+  color: #FFFFFF;
+  border-color: var(--accent-cyan);
 }
 
 .meta-item strong {
